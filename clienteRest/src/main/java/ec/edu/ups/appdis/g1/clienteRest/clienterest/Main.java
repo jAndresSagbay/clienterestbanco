@@ -1,7 +1,6 @@
 package ec.edu.ups.appdis.g1.clienteRest.clienterest;
 
 import java.util.List;
-
 import ec.edu.ups.appdis.g1.clienteRest.model.Respuesta;
 import ec.edu.ups.appdis.g1.clienteRest.model.TransaccionFachada;
 
@@ -9,6 +8,7 @@ import ec.edu.ups.appdis.g1.clienteRest.model.TransaccionFachada;
 
 public class Main {
 
+	
 	public static void main(String args[]) {
 		
 		//CategoriasCli cli = new CategoriasCli();
@@ -34,16 +34,16 @@ public class Main {
 		trfRetiro.setTipo("retiro");
 		System.out.println(trfRetiro.toString());
 		
-		/*
+		
 		//Cosumiendo WS-REST de tipo GET que retorna un objeto 
-		Categoria cat = cli.getCategoria(100);
-		System.out.println(cat);
+		//Categoria cat = cli.getCategoria(100);
+		//System.out.println(cat);
 		
-		//Cosumiendo WS-REST de tipo GET que retorna una colección de objeto 
-		List<Categoria> categorias = cli.getCategorias();
-		System.out.println(categorias);
+		//Cosumiendo WS-REST de tipo GET que retorna una colecciï¿½n de objeto 
+		///List<Categoria> categorias = cli.getCategorias();
+		//System.out.println(categorias);
 		
-		*/
+		
 		
 		//Consumiento un WS-REST de tipo POST enviando una entidad como parametro
 		Respuesta respuesta = cliente.registraTransferenciaentrecuentas(trf);
@@ -55,6 +55,6 @@ public class Main {
 		Respuesta respuestaRetiro = cliente.registraRetiro(trfRetiro);
 		System.out.println("Retiro: "+respuestaRetiro);
 		
-		//ec.ups.edu.appdis.g1.clientesoap
+		//ec.ups.edu.appdis.g1.clientesoap 
 	}
 }
